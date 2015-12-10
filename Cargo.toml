@@ -1,0 +1,4 @@
+[package]
+name = "ovisbp"
+version = "0.1.0"
+authors = ["Leander Neiß <leander.neiss@student.hpi.uni-potsdam.de>"]
