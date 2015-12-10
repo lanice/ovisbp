@@ -1,14 +1,14 @@
 
-trait Block {
+pub trait Block {
     fn destroyable(&self) -> bool;
 }
 
-trait Field {
+pub trait Field {
     fn empty(&self) -> bool;
     fn block(&self) -> Option<&Block>;
 }
 
-trait Level {
+pub trait Level {
     fn width(&self) -> usize;
     fn height(&self) -> usize;
 
