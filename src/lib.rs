@@ -17,4 +17,11 @@ pub trait Level {
 
     fn start_position(&self) -> (usize, usize);
     fn goal_position(&self) -> (usize, usize);
+
+    /// Returns the height (in fields) of a jump 'seconds' after
+    /// it started
+    fn jump_height(&self, seconds: f32) -> f32;
+
+    /// Returns the walking speed of a player in fields per second.
+    fn player_velocity(&self) -> f32;
 }
